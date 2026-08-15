@@ -36,13 +36,13 @@
 
 <h1>Informativa sulla Privacy</h1>
 <p class="meta"><strong>Lo spiega Aura — app di aiuto compiti</strong><br>
-Versione 1.4 — in vigore dall'11 agosto 2026<br>
+Versione 1.5 — in vigore dal 14 agosto 2026<br>
 Resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)</p>
 
 <div class="box">
   <h3 style="margin-top:0">In breve, in parole semplici</h3>
   <ul>
-    <li><strong>L'intelligenza artificiale di Aura funziona dentro il tuo telefono.</strong> Le domande che le fai e i contenuti dei tuoi libri <strong>non vengono inviati</strong> a nessun server per essere elaborati, e non servono ad addestrare modelli di IA.</li>
+    <li><strong>Le domande semplici non escono dal telefono.</strong> L'intelligenza artificiale di Aura vive sul dispositivo e risponde da sola alla maggior parte delle richieste. Per le domande che richiedono un ragionamento complesso — un'espressione lunga, la fotografia di un esercizio — la domanda viene inviata a un servizio esterno: <strong>l'app te lo dice ogni volta che accade</strong>, e puoi disattivare del tutto questa modalità. Il dettaglio è al punto 4-bis.</li>
     <li><strong>Niente pubblicità, niente profilazione pubblicitaria, nessuna vendita o cessione dei tuoi dati.</strong></li>
     <li>Le <strong>foto delle pagine dei tuoi libri restano sul telefono.</strong> Non le carichiamo da nessuna parte.</li>
     <li>Se accedi con Google, salviamo nel cloud solo i <strong>progressi di studio</strong> in uno spazio privato, per ritrovarli se cambi telefono. Puoi usare l'app anche senza accedere.</li>
@@ -98,9 +98,9 @@ E-mail di contatto: <strong>simonelaudi0@gmail.com</strong></p>
       <td>Sul dispositivo; nel cloud (spazio privato) se il salvataggio online è attivo</td>
     </tr>
     <tr>
-      <td>Riassunti delle conversazioni con Aura</td>
-      <td>Ricordare in sintesi ciò di cui si è già parlato, senza conservare le conversazioni integrali</td>
-      <td>Sul dispositivo; nel cloud (spazio privato) se il salvataggio online è attivo</td>
+      <td>Conversazioni con Aura</td>
+      <td>Riprendere una spiegazione interrotta e ricordare ciò di cui si è già parlato</td>
+      <td><strong>Il testo integrale resta solo sul dispositivo</strong> e viene conservato per un massimo di 30 giorni, al solo scopo di riprendere una lezione interrotta. Nel cloud (spazio privato, se il salvataggio online è attivo) viene salvata unicamente una <strong>sintesi</strong> di ciò di cui si è parlato, mai le conversazioni per esteso. In &quot;modalità vetrina&quot; (utenti sotto i 14 anni in attesa dell'autorizzazione) non viene conservata alcuna conversazione, e la revoca del consenso cancella quelle presenti sul dispositivo.</td>
     </tr>
     <tr>
       <td>Foto delle pagine dei libri e testo estratto da esse</td>
@@ -148,8 +148,16 @@ E-mail di contatto: <strong>simonelaudi0@gmail.com</strong></p>
 <p>Il solo momento in cui è necessaria la rete è il <strong>download iniziale del modello</strong>, descritto al punto 6. Durante quel download il fornitore che ospita il file riceve i dati tecnici propri di qualunque connessione internet (in particolare l'indirizzo IP), ma non riceve alcun contenuto dell'utente.</p>
 <p>Avvertenza sulla qualità: le risposte generate da un'intelligenza artificiale possono contenere errori o imprecisioni. Aura è uno strumento di supporto allo studio e non sostituisce i libri, gli insegnanti o professionisti qualificati.</p>
 
-<h2>4-bis. "Spiegazioni avanzate": funzione facoltativa, disattivata per impostazione predefinita</h2>
-<p>Su alcuni dispositivi il modello eseguito localmente è di dimensioni ridotte e produce risposte lente o poco precise. Per questo l'app mette a disposizione una funzione <strong>facoltativa</strong> che, <strong>solo se espressamente attivata</strong>, invia la domanda a un modello più capace eseguito sui server di Google (servizio <em>Gemini API</em>).</p>
+<h2>4-bis. "Spiegazioni avanzate": quando la domanda esce dal dispositivo</h2>
+<p>Il modello di intelligenza artificiale eseguito sul dispositivo ha una capacità di elaborazione limitata e, su richieste articolate, produce risposte imprecise. Per questa ragione l'app adotta un funzionamento <strong>misto</strong>, impostato in modalità <strong>&quot;Automatico&quot;</strong>: le richieste semplici sono elaborate localmente e <strong>non lasciano il dispositivo</strong>, mentre quelle che richiedono un'elaborazione complessa sono trasmesse a un modello più capace eseguito sui server di Google (servizio <em>Gemini API</em>).</p>
+<p>Rientrano di norma nella seconda categoria: le richieste accompagnate dalla <strong>fotografia di un esercizio</strong>, le espressioni matematiche articolate, le richieste corredate da <strong>ampi estratti dei materiali di studio</strong> e le domande di lunghezza rilevante. L'app <strong>segnala all'utente, in cima a ciascuna risposta</strong>, se questa è stata elaborata al di fuori del dispositivo.</p>
+<p><strong>L'utente può modificare tale impostazione in qualsiasi momento</strong> (percorso: menu → &quot;Come ragiona Aura&quot;), scegliendo fra tre modalità:</p>
+<ul>
+  <li><strong>Automatico</strong> (predefinita): elaborazione locale per le richieste semplici, esterna per quelle complesse;</li>
+  <li><strong>Solo nel telefono</strong>: nessun dato lascia il dispositivo per l'elaborazione delle richieste; le risposte alle domande complesse risultano meno accurate;</li>
+  <li><strong>Sempre avanzate</strong>: tutte le richieste sono elaborate esternamente.</li>
+</ul>
+<p>Per gli utenti di età inferiore ai 14 anni la scelta è modificabile dal genitore o tutore nell'apposita area dell'applicazione.</p>
 <p><strong>Dati trasmessi</strong>, quando la funzione è attiva:</p>
 <ul>
   <li>il testo della domanda posta dall'utente;</li>
@@ -309,7 +317,7 @@ E-mail di contatto: <strong>simonelaudi0@gmail.com</strong></p>
 <p>Questa informativa può essere aggiornata, ad esempio per nuove funzioni o per adeguamenti normativi. La versione aggiornata viene pubblicata a questo indirizzo e, quando le modifiche sono rilevanti, viene mostrata nell'app chiedendo una nuova accettazione prima di continuare a usare il servizio. In alto sono sempre indicati numero di versione e data di entrata in vigore.</p>
 
 <hr style="margin-top:2.5rem; border:none; border-top:1px solid #e5ded1">
-<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.4 dell'11 agosto 2026.<br>
+<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.5 del 14 agosto 2026.<br>
 Titolare del trattamento: Simone Laudi — simonelaudi0@gmail.com.</p>
 
 </body>
