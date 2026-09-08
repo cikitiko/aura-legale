@@ -36,7 +36,7 @@
 
 <h1>Informativa sulla Privacy</h1>
 <p class="meta"><strong>Lo spiega Aura — app di aiuto compiti</strong><br>
-Versione 1.6 — in vigore dal 5 settembre 2026<br>
+Versione 1.8 — in vigore dall'8 settembre 2026<br>
 Resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)</p>
 
 <div class="box">
@@ -105,7 +105,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
     <tr>
       <td>Foto delle pagine dei libri e testo estratto da esse</td>
       <td>Permettere ad Aura di spiegare partendo dai materiali di studio dell'utente</td>
-      <td><strong>Solo sul dispositivo.</strong> Nel cloud può essere salvata unicamente una scheda sintetica del libro (es. materia e argomenti principali), mai le immagini né il testo integrale. I materiali non sono visibili ad altri utenti e non vengono condivisi. Al momento dell'aggiunta un controllo automatico eseguito <strong>sul dispositivo</strong> rifiuta i contenuti palesemente non didattici, che quindi non entrano nella libreria e non generano alcuna scheda nel cloud</td>
+      <td><strong>Solo sul dispositivo.</strong> Nel cloud può essere salvata unicamente una scheda sintetica del libro (es. materia e argomenti principali), mai le immagini né il testo integrale. Nelle modalità che si avvalgono del servizio esterno (punto 4-bis) viene trasmesso il solo <strong>brano pertinente alla singola domanda</strong>. I materiali non sono visibili ad altri utenti e non vengono condivisi. Al momento dell'aggiunta un controllo automatico eseguito <strong>sul dispositivo</strong> rifiuta i contenuti palesemente non didattici, che quindi non entrano nella libreria e non generano alcuna scheda nel cloud</td>
     </tr>
     <tr>
       <td>Dati dell'account Google (indirizzo e-mail, nome, immagine del profilo)</td>
@@ -138,14 +138,16 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <h3>Fotocamera, galleria e riconoscimento del testo (OCR)</h3>
 <p>La fotocamera e l'accesso alle immagini vengono usati solo quando l'utente sceglie di aggiungere la pagina di un libro. Il riconoscimento del testo dalle immagini avviene <strong>interamente sul dispositivo</strong> (libreria ML Kit di Google in modalità on-device): le immagini non vengono inviate ad alcun server per essere analizzate.</p>
 
-<h2>4. L'intelligenza artificiale funziona nel telefono</h2>
-<p>Il modello di intelligenza artificiale che genera le risposte di Aura viene scaricato sul dispositivo ed eseguito <strong>localmente</strong>. Ne consegue che:</p>
+<h2>4. Dove viene elaborata la richiesta</h2>
+<p>L'applicazione può eseguire un modello di intelligenza artificiale <strong>direttamente sul dispositivo</strong>. Quel modello, però, non viene installato da solo: lo si scarica soltanto se l'utente lo richiede, ed è di dimensioni contenute, sufficienti alle richieste semplici ma non a quelle articolate.</p>
+<p>Per questa ragione l'elaborazione avviene <strong>in due luoghi distinti</strong>:</p>
 <ul>
-  <li>le domande dell'utente, i contenuti dei suoi materiali di studio e le risposte generate <strong>non vengono trasmessi a server di intelligenza artificiale</strong>, né nostri né di terzi;</li>
-  <li>tali contenuti <strong>non vengono utilizzati per addestrare o migliorare modelli di IA</strong>;</li>
-  <li>Aura può funzionare anche senza connessione a internet.</li>
+  <li>le richieste semplici, quando il modello locale è installato, sono elaborate <strong>sul dispositivo</strong> e il loro contenuto non viene trasmesso ad alcun server;</li>
+  <li>le richieste che richiedono un'elaborazione complessa sono trasmesse a un modello più capace eseguito sui server di Google (servizio <em>Gemini API</em>), secondo quanto descritto in dettaglio al punto 4-bis, al quale si rinvia integralmente.</li>
 </ul>
-<p>Il solo momento in cui è necessaria la rete è il <strong>download iniziale del modello</strong>, descritto al punto 6. Durante quel download il fornitore che ospita il file riceve i dati tecnici propri di qualunque connessione internet (in particolare l'indirizzo IP), ma non riceve alcun contenuto dell'utente.</p>
+<p><strong>La modalità con cui l'applicazione si avvia è quella mista</strong> (denominata &quot;Automatico&quot;). L'utente può in qualsiasi momento scegliere la modalità &quot;Solo nel telefono&quot;, che esclude ogni trasmissione: le modalità disponibili e le modalità di scelta sono descritte al punto 4-bis.</p>
+<p>In tutti i casi <strong>i contenuti dell'utente non vengono utilizzati per addestrare o migliorare modelli di intelligenza artificiale</strong>: per il servizio Gemini API è utilizzato il piano a pagamento, per il quale il fornitore assume espressamente tale impegno.</p>
+<p>Il <strong>download del modello locale</strong>, quando l'utente lo richiede, è descritto al punto 6: il fornitore che ospita il file riceve i dati tecnici propri di qualunque connessione internet (in particolare l'indirizzo IP), ma non riceve alcun contenuto dell'utente.</p>
 <p>Avvertenza sulla qualità: le risposte generate da un'intelligenza artificiale possono contenere errori o imprecisioni. Aura è uno strumento di supporto allo studio e non sostituisce i libri, gli insegnanti o professionisti qualificati.</p>
 
 <h2>4-bis. "Spiegazioni avanzate": quando la domanda esce dal dispositivo</h2>
@@ -168,8 +170,10 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 </ul>
 <p><strong>Fotografia di un esercizio.</strong> Se l'utente allega alla conversazione la fotografia di un esercizio, l'app tenta <strong>in primo luogo</strong> di leggerla localmente sul dispositivo. Soltanto qualora tale lettura non riesca — evenienza frequente con le formule matematiche disposte su più righe — e soltanto se la presente funzione è attiva, l'immagine viene trasmessa al fornitore <strong>al solo fine della trascrizione in testo</strong>. L'app ne dà avviso all'utente in ciascuna occasione. Se la funzione è disattivata, l'immagine non lascia in alcun caso il dispositivo.</p>
 <p><strong>Dati che non vengono mai trasmessi</strong>: le fotografie dei libri conservate nella Libreria (che restano sempre e soltanto sul dispositivo), i materiali di studio nella loro interezza, il nome dell'utente, il suo indirizzo e-mail e i dati dell'account.</p>
+<p><strong>Dati personali presenti per errore nei materiali.</strong> Può accadere che nella fotografia di una pagina rientri un documento contenente dati personali. L'applicazione riconosce <strong>sul dispositivo</strong> alcuni schemi determinati — codice fiscale, IBAN, numero di telefono, indirizzo di posta elettronica — e opera su due piani: <strong>informa l'utente</strong> al momento dell'aggiunta, lasciandogli la decisione (il dato potrebbe far parte dell'esercizio), e <strong>rimuove il dato dal testo trasmesso</strong> al servizio esterno, sostituendolo con un segnaposto. Il riconoscimento è deliberatamente limitato a schemi di forma inequivocabile, per non generare segnalazioni infondate su materiale di studio.</p>
 <p><strong>Garanzie</strong>: viene utilizzato il piano a pagamento del servizio, per il quale il fornitore dichiara di <strong>non utilizzare le richieste e le risposte per addestrare o migliorare i propri modelli</strong>. Le richieste sono conservate dal fornitore per un periodo limitato, al solo scopo di individuare abusi e per adempiere a obblighi di legge.</p>
-<p><strong>Impostazione iniziale e revoca</strong>: al momento dell'installazione l'app si trova in modalità &quot;Automatico&quot;, descritta sopra. L'utente può passare in qualsiasi momento a &quot;Solo nel telefono&quot;, con effetto immediato: da quel momento l'elaborazione torna a svolgersi interamente sul dispositivo. Per gli utenti di età inferiore a 14 anni la modalità è determinata da chi esercita la responsabilità genitoriale, dall'area a lui riservata, che può modificarla in ogni momento.</p>
+<p><strong>Impostazione iniziale e revoca</strong>: al momento dell'installazione l'app si trova in modalità &quot;Automatico&quot;, descritta sopra. L'utente può passare in qualsiasi momento a &quot;Solo nel telefono&quot;, con effetto immediato: da quel momento l'elaborazione torna a svolgersi interamente sul dispositivo.</p>
+<p>Per gli utenti di età inferiore a 14 anni la modalità è <strong>determinata da chi esercita la responsabilità genitoriale</strong>, che la sceglie contestualmente all'autorizzazione all'uso dell'applicazione e può modificarla in ogni momento. Sono a tal fine disponibili due strumenti: l'area riservata all'interno dell'applicazione e un <strong>collegamento permanente</strong>, trasmesso al genitore al momento dell'autorizzazione, che consente di modificare la scelta o di ritirare integralmente l'autorizzazione <strong>senza necessità di disporre del dispositivo del minore</strong>. La riattivazione della modalità che comporta trasmissione a terzi richiede, sul dispositivo, il superamento di una verifica riservata agli adulti; la disattivazione non richiede alcuna verifica.</p>
 <p><strong>Base giuridica</strong>: il consenso (art. 6, par. 1, lett. a GDPR), prestato mediante l'accettazione della presente informativa — che viene sottoposta all'utente prima dell'utilizzo dell'applicazione e ne descrive espressamente il funzionamento misto — e liberamente revocabile mediante la scelta della modalità &quot;Solo nel telefono&quot;. Per gli utenti di età inferiore a 14 anni il consenso è prestato o autorizzato da chi esercita la responsabilità genitoriale. La revoca non pregiudica l'utilizzo dell'app: incide unicamente sulla qualità delle spiegazioni.</p>
 
 <h2>5. Tutela dei minori</h2>
@@ -318,7 +322,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p>Questa informativa può essere aggiornata, ad esempio per nuove funzioni o per adeguamenti normativi. La versione aggiornata viene pubblicata a questo indirizzo e, quando le modifiche sono rilevanti, viene mostrata nell'app chiedendo una nuova accettazione prima di continuare a usare il servizio. In alto sono sempre indicati numero di versione e data di entrata in vigore.</p>
 
 <hr style="margin-top:2.5rem; border:none; border-top:1px solid #e5ded1">
-<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.6 del 5 settembre 2026.<br>
+<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.8 dell'8 settembre 2026.<br>
 Titolare del trattamento: Simone Laudi — aura.contact.support@gmail.com.</p>
 
 </body>
