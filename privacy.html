@@ -36,7 +36,7 @@
 
 <h1>Informativa sulla Privacy</h1>
 <p class="meta"><strong>Lo spiega Aura — app di aiuto compiti</strong><br>
-Versione 1.10 — in vigore dal 16 settembre 2026<br>
+Versione 1.11 — in vigore dal 18 settembre 2026<br>
 Resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)</p>
 
 <div class="box">
@@ -123,6 +123,11 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Sul dispositivo e nel cloud. Contiene solo l'identificativo pseudonimo, le versioni dei documenti e le date</td>
     </tr>
     <tr>
+      <td>Segnalazioni delle risposte (i pulsanti &quot;pollice in su&quot; e &quot;pollice in giù&quot; sotto le risposte di Aura)</td>
+      <td>Correggere gli errori dell'assistente e individuare le risposte non adatte. La segnalazione parte <strong>solo se l'utente la invia</strong>. Il pollice in su trasmette soltanto l'indicazione &quot;risposta utile&quot;, senza alcun testo. Il pollice in giù trasmette il tipo di problema scelto e — salvo che l'utente abbia scelto la modalità &quot;Solo nel telefono&quot;, nel qual caso si trasmette <strong>solo il tipo di problema</strong> — il testo della domanda, quello della risposta e l'eventuale nota scritta dall'utente, dopo averne rimosso sul dispositivo indirizzi e-mail, numeri di telefono, codici fiscali e IBAN. Sono trasmesse inoltre la versione dell'app e l'indicazione se la risposta era stata elaborata sul dispositivo o all'esterno</td>
+      <td>Nel cloud, in una raccolta separata dagli spazi degli utenti, <strong>senza nome né identificativo</strong>: una volta ricevuta, la segnalazione non è riconducibile a chi l'ha inviata. Cancellata automaticamente dopo 180 giorni (punto 9)</td>
+    </tr>
+    <tr>
       <td>Indirizzi dei portali dei registri elettronici salvati dall'utente</td>
       <td>Ritrovare rapidamente il portale della propria scuola</td>
       <td>Solo sul dispositivo</td>
@@ -156,7 +161,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p><strong>L'utente può modificare tale impostazione in qualsiasi momento</strong> (percorso: menu → &quot;Come ragiona Aura&quot;), scegliendo fra tre modalità:</p>
 <ul>
   <li><strong>Automatico</strong> (predefinita): elaborazione locale per le richieste semplici, esterna per quelle complesse;</li>
-  <li><strong>Solo nel telefono</strong>: nessun dato lascia il dispositivo per l'elaborazione delle richieste; le risposte alle domande complesse risultano meno accurate;</li>
+  <li><strong>Solo nel telefono</strong>: nessun dato lascia il dispositivo per l'elaborazione delle richieste; le risposte alle domande complesse risultano meno accurate. Fa eccezione soltanto la segnalazione di una risposta, se l'utente decide di inviarla: in questa modalità contiene unicamente il tipo di problema (punto 3);</li>
   <li><strong>Sempre avanzate</strong>: tutte le richieste sono elaborate esternamente.</li>
 </ul>
 <p>Per gli utenti di età inferiore ai 14 anni la scelta è modificabile dal genitore o tutore nell'apposita area dell'applicazione.</p>
@@ -214,8 +219,13 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Ricevono i soli dati tecnici della connessione (es. indirizzo IP) necessari a consegnare il file. Nessun contenuto dell'utente</td>
     </tr>
     <tr>
+      <td>Elaborazione delle richieste complesse (&quot;Spiegazioni avanzate&quot;, punto 4-bis)</td>
+      <td>Google Ireland Limited / Google LLC (Gemini API, piano a pagamento)</td>
+      <td>Responsabile del trattamento. Riceve i dati indicati al punto 4-bis; per il piano utilizzato si impegna a non usarli per addestrare o migliorare i propri modelli. Nessun dato è trasmesso in modalità &quot;Solo nel telefono&quot;</td>
+    </tr>
+    <tr>
       <td>Ricerca di approfondimenti enciclopedici</td>
-      <td>Wikimedia Foundation, Inc. (Wikipedia)</td>
+      <td>Wikimedia Foundation, Inc. (Wikipedia) e Vikidia</td>
       <td>Se la ricerca è attiva e la richiesta lo rende utile, vengono inviati i <strong>termini di ricerca</strong> (parole chiave estratte dalla domanda) e i dati tecnici della connessione. Non inviamo il nome dell'utente né altri suoi dati. La funzione può essere disattivata nell'app</td>
     </tr>
     <tr>
@@ -229,14 +239,14 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Nessuna trasmissione delle immagini</td>
     </tr>
     <tr>
-      <td>Gestione dell'autorizzazione dei genitori (solo per gli utenti con meno di 14 anni)</td>
+      <td>Server dell'applicazione: inoltro delle richieste di &quot;Spiegazioni avanzate&quot;, ricezione delle segnalazioni delle risposte e delle richieste di cancellazione, gestione dell'autorizzazione dei genitori</td>
       <td>Cloudflare, Inc.</td>
-      <td>Responsabile del trattamento. Ospita il servizio che genera il link di autorizzazione, mostra al genitore la pagina di consenso e ne registra l'esito. Tratta l'indirizzo e-mail del genitore e i dati tecnici della connessione</td>
+      <td>Responsabile del trattamento. Inoltra al fornitore del modello le richieste del punto 4-bis <strong>senza conservarne il contenuto</strong>; riceve le segnalazioni e le registra nel cloud senza identificativo; per gli utenti con meno di 14 anni genera il link di autorizzazione, mostra al genitore la pagina di consenso e ne registra l'esito. Tratta l'identificativo pseudonimo dell'utente (per verificarne l'accesso), l'indirizzo e-mail del genitore dove previsto e i dati tecnici della connessione</td>
     </tr>
     <tr>
-      <td>Invio dell'e-mail di autorizzazione al genitore</td>
-      <td>Resend, Inc.</td>
-      <td>Responsabile del trattamento. Riceve l'indirizzo e-mail del genitore e il testo del messaggio, al solo scopo di consegnarlo</td>
+      <td>Invio delle e-mail al genitore (richiesta di autorizzazione e avvisi quando la scelta cambia) — solo per gli utenti con meno di 14 anni</td>
+      <td>Brevo (Sendinblue SAS, Francia); in via di riserva, solo se l'invio con Brevo non riesce, Resend, Inc.</td>
+      <td>Responsabili del trattamento. Ricevono l'indirizzo e-mail del genitore e il testo del messaggio, al solo scopo di consegnarlo</td>
     </tr>
     <tr>
       <td>Ricerca di opere letterarie libere da diritti (Biblioteca dei classici)</td>
@@ -281,6 +291,10 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Adempimento di un obbligo legale (art. 7, par. 1, GDPR) e legittimo interesse alla difesa in giudizio — art. 6, par. 1, lett. c) e f)</td>
     </tr>
     <tr>
+      <td>Segnalazioni delle risposte: correzione degli errori dell'assistente e individuazione dei contenuti non adatti</td>
+      <td>Consenso dell'interessato, manifestato con l'invio volontario della singola segnalazione — art. 6, par. 1, lett. a)</td>
+    </tr>
+    <tr>
       <td>Sicurezza del servizio e prevenzione degli abusi</td>
       <td>Legittimo interesse del Titolare — art. 6, par. 1, lett. f)</td>
     </tr>
@@ -302,6 +316,9 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
   <li><strong>Dati nel cloud:</strong> conservati finché l'account è attivo. Puoi cancellarli tu, subito e senza chiedere niente a nessuno, dall'app: <em>menu → Area genitori → «Cancella i miei dati»</em>. Se hai già disinstallato l'app, la stessa cancellazione si richiede dalla pagina <a href="https://aura-consenso.lo-spiega-aura.workers.dev/cancella-dati">aura-consenso.lo-spiega-aura.workers.dev/cancella-dati</a> (per eliminare anche l&rsquo;account: <a href="https://aura-consenso.lo-spiega-aura.workers.dev/cancella-account">/cancella-account</a>). Vengono eliminati il nome e la classe dello studente, i riassunti delle conversazioni, i profili dei libri della libreria, le risposte al questionario, il consenso genitoriale e il conteggio delle domande usate. Viene eliminato inoltre l&rsquo;<strong>indirizzo e-mail del genitore</strong> in tutte le copie che ne conserviamo (quella salvata per riconoscerlo, le richieste di autorizzazione ancora in sospeso e il collegamento con cui pu&ograve; tornare sulla propria scelta: da quel momento i link gi&agrave; inviati per posta non funzionano pi&ugrave;), insieme allo stato dell&rsquo;abbonamento o della prova. Se &egrave; stato usato un codice di attivazione, il codice resta segnato come gi&agrave; speso &mdash; altrimenti tornerebbe riscattabile &mdash; ma non conserva pi&ugrave; il collegamento con l&rsquo;utente.</li>
   <li><strong>Prova dell'accettazione dei documenti e del consenso genitoriale:</strong> conservata per il tempo in cui il servizio viene utilizzato e, successivamente, per il termine di prescrizione ordinario applicabile a un'eventuale contestazione, essendo funzionale a dimostrare l'adempimento degli obblighi di legge. Contiene solo identificativi pseudonimi, versioni dei documenti e date.</li>
   <li><strong>Foto e testo dei libri:</strong> restano sul dispositivo e vengono eliminati quando l'utente elimina il libro o l'app.</li>
+  <li><strong>Segnalazioni delle risposte:</strong> cancellate automaticamente dopo <strong>180 giorni</strong>. Non essendo collegate ad alcun identificativo, non siamo in grado di ricondurle all'utente (art. 11 GDPR) e per questo la cancellazione dei dati dall'app non le riguarda; se l'utente ci scrive riportando il testo di una segnalazione che ha inviato, la ricerchiamo e la cancelliamo.</li>
+  <li><strong>Richieste di autorizzazione inviate al genitore:</strong> cancellate automaticamente entro un giorno dalla scadenza del link (48 ore), che sia stato usato o no. La prova dell'autorizzazione concessa resta nel consenso registrato.</li>
+  <li><strong>Contatori contro gli abusi</strong> (quante e-mail di autorizzazione, tentativi di codice o segnalazioni in un giorno): cancellati automaticamente dopo due giorni.</li>
 </ul>
 
 <h2>10. I tuoi diritti</h2>
@@ -325,7 +342,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p>Questa informativa può essere aggiornata, ad esempio per nuove funzioni o per adeguamenti normativi. La versione aggiornata viene pubblicata a questo indirizzo e, quando le modifiche sono rilevanti, viene mostrata nell'app chiedendo una nuova accettazione prima di continuare a usare il servizio. In alto sono sempre indicati numero di versione e data di entrata in vigore.</p>
 
 <hr style="margin-top:2.5rem; border:none; border-top:1px solid #e5ded1">
-<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.10 del 16 settembre 2026.<br>
+<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.11 del 18 settembre 2026.<br>
 Titolare del trattamento: Simone Laudi — aura.contact.support@gmail.com.</p>
 
 </body>
