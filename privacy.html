@@ -36,7 +36,7 @@
 
 <h1>Informativa sulla Privacy</h1>
 <p class="meta"><strong>Lo spiega Aura — app di aiuto compiti</strong><br>
-Versione 1.13 — in vigore dal 21 settembre 2026<br>
+Versione 1.14 — in vigore dal 22 settembre 2026<br>
 Resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)</p>
 
 <div class="box">
@@ -128,6 +128,11 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Presso Google (Firebase Crashlytics), per <strong>90 giorni</strong>. La raccolta è <strong>disattivata all'installazione</strong>: si attiva solo dopo l'accettazione della presente informativa, resta disattivata in &quot;modalità vetrina&quot; (utenti sotto i 14 anni in attesa dell'autorizzazione) e può essere spenta in qualsiasi momento da <em>Profilo → Rapporti di errore</em> o dall'<em>Area genitori</em>; per gli utenti con meno di 14 anni la riattivazione richiede la verifica riservata agli adulti</td>
     </tr>
     <tr>
+      <td>Attestazione di integrità dell'app (Firebase App Check, tramite Google Play Integrity)</td>
+      <td>Verificare che le richieste al database e al nostro server provengano dall'app originale, installata da Google Play su un dispositivo non manomesso, e respingere quelle fabbricate da programmi automatici, che potrebbero esaurire il servizio per tutti gli utenti. Per rilasciare l'attestazione Google Play esamina l'app (nome del pacchetto, versione, certificato di firma, stato della licenza) e il dispositivo (certificato di attestazione generato dai servizi Google Play), secondo le proprie condizioni. A noi perviene soltanto l'attestazione firmata, che contiene l'identificativo dell'app e <strong>nessun</strong> dato dell'utente</td>
+      <td>L'attestazione ha validità limitata e il nostro server non la conserva: registra soltanto quante attestazioni risultano valide, mancanti o non valide in ciascun giorno, senza alcun identificativo, e cancella questi conteggi dopo <strong>30 giorni</strong>. I dati esaminati da Google Play sono cancellati da Google dopo un periodo di conservazione prestabilito</td>
+    </tr>
+    <tr>
       <td>Segnalazioni delle risposte (i pulsanti &quot;pollice in su&quot; e &quot;pollice in giù&quot; sotto le risposte di Aura)</td>
       <td>Correggere gli errori dell'assistente e individuare le risposte non adatte. La segnalazione parte <strong>solo se l'utente la invia</strong>. Il pollice in su trasmette soltanto l'indicazione &quot;risposta utile&quot;, senza alcun testo. Il pollice in giù trasmette il tipo di problema scelto e — salvo che l'utente abbia scelto la modalità &quot;Solo nel telefono&quot;, nel qual caso si trasmette <strong>solo il tipo di problema</strong> — il testo della domanda, quello della risposta e l'eventuale nota scritta dall'utente, dopo averne rimosso sul dispositivo indirizzi e-mail, numeri di telefono, codici fiscali e IBAN. Sono trasmesse inoltre la versione dell'app e l'indicazione se la risposta era stata elaborata sul dispositivo o all'esterno</td>
       <td>Nel cloud, in una raccolta separata dagli spazi degli utenti, <strong>senza nome né identificativo</strong>: una volta ricevuta, la segnalazione non è riconducibile a chi l'ha inviata. Cancellata automaticamente dopo 180 giorni (punto 9)</td>
@@ -214,12 +219,12 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
   </thead>
   <tbody>
     <tr>
-      <td>Autenticazione (accesso anonimo e accesso con Google), banca dati dei progressi, configurazione remota dell'app</td>
-      <td>Google Ireland Limited / Google LLC (Firebase Authentication, Cloud Firestore, Remote Config, Crashlytics)</td>
+      <td>Autenticazione (accesso anonimo e accesso con Google), banca dati dei progressi, configurazione remota dell'app, rapporti di errore, verifica dell'integrità dell'app</td>
+      <td>Google Ireland Limited / Google LLC (Firebase Authentication, Cloud Firestore, Remote Config, Crashlytics, App Check)</td>
       <td>Responsabile del trattamento. Conserva i dati indicati al punto 3 nello spazio privato dell'utente e riceve identificativi tecnici pseudonimi</td>
     </tr>
     <tr>
-      <td>Distribuzione dell'applicazione ed eventuali acquisti</td>
+      <td>Distribuzione dell'applicazione, eventuali acquisti e rilascio dell'attestazione di integrità (Play Integrity)</td>
       <td>Google Ireland Limited (Google Play)</td>
       <td>Titolare autonomo per i dati che raccoglie in qualità di gestore dello store, secondo le proprie informative</td>
     </tr>
@@ -309,7 +314,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Consenso dell'interessato, manifestato con l'invio volontario della singola segnalazione — art. 6, par. 1, lett. a)</td>
     </tr>
     <tr>
-      <td>Sicurezza del servizio e prevenzione degli abusi</td>
+      <td>Sicurezza del servizio e prevenzione degli abusi, compresa la verifica dell'integrità dell'app</td>
       <td>Legittimo interesse del Titolare — art. 6, par. 1, lett. f)</td>
     </tr>
   </tbody>
@@ -333,6 +338,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
   <li><strong>Segnalazioni delle risposte:</strong> cancellate automaticamente dopo <strong>180 giorni</strong>. Non essendo collegate ad alcun identificativo, non siamo in grado di ricondurle all'utente (art. 11 GDPR) e per questo la cancellazione dei dati dall'app non le riguarda; se l'utente ci scrive riportando il testo di una segnalazione che ha inviato, la ricerchiamo e la cancelliamo.</li>
   <li><strong>Richieste di autorizzazione inviate al genitore:</strong> cancellate automaticamente entro un giorno dalla scadenza del link (48 ore), che sia stato usato o no. La prova dell'autorizzazione concessa resta nel consenso registrato.</li>
   <li><strong>Contatori contro gli abusi</strong> (quante e-mail di autorizzazione, tentativi di codice o segnalazioni in un giorno): cancellati automaticamente dopo due giorni.</li>
+  <li><strong>Conteggi giornalieri delle attestazioni di integrità</strong> (quante valide, mancanti o non valide; nessun identificativo): cancellati automaticamente dopo 30 giorni.</li>
 </ul>
 
 <h2>10. I tuoi diritti</h2>
@@ -350,13 +356,13 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p>Hai inoltre diritto di proporre <strong>reclamo all'Autorità Garante per la protezione dei dati personali</strong> (Piazza Venezia 11, 00187 Roma — <a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) o di ricorrere all'autorità giudiziaria.</p>
 
 <h2>11. Sicurezza</h2>
-<p>Adottiamo misure tecniche e organizzative adeguate a proteggere i dati, tra cui: cifratura delle comunicazioni con i server (HTTPS/TLS), assegnazione a ciascun utente di uno spazio dati separato accessibile solo con la propria identità, regole di accesso al database che impediscono a un utente di leggere o modificare i dati di altri, minimizzazione dei dati raccolti e mantenimento in locale dei contenuti più sensibili (foto dei libri, conversazioni, data di nascita). Nessun sistema può però garantire una sicurezza assoluta.</p>
+<p>Adottiamo misure tecniche e organizzative adeguate a proteggere i dati, tra cui: cifratura delle comunicazioni con i server (HTTPS/TLS), assegnazione a ciascun utente di uno spazio dati separato accessibile solo con la propria identità, regole di accesso al database che impediscono a un utente di leggere o modificare i dati di altri, verifica dell'integrità dell'app sulle richieste al database e al nostro server, minimizzazione dei dati raccolti e mantenimento in locale dei contenuti più sensibili (foto dei libri, conversazioni, data di nascita). Nessun sistema può però garantire una sicurezza assoluta.</p>
 
 <h2>12. Modifiche a questa informativa</h2>
 <p>Questa informativa può essere aggiornata, ad esempio per nuove funzioni o per adeguamenti normativi. La versione aggiornata viene pubblicata a questo indirizzo e, quando le modifiche sono rilevanti, viene mostrata nell'app chiedendo una nuova accettazione prima di continuare a usare il servizio. In alto sono sempre indicati numero di versione e data di entrata in vigore.</p>
 
 <hr style="margin-top:2.5rem; border:none; border-top:1px solid #e5ded1">
-<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.13 del 21 settembre 2026.<br>
+<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.14 del 22 settembre 2026.<br>
 Titolare del trattamento: Simone Laudi — aura.contact.support@gmail.com.</p>
 
 </body>
