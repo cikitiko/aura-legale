@@ -36,7 +36,7 @@
 
 <h1>Informativa sulla Privacy</h1>
 <p class="meta"><strong>Lo spiega Aura — app di aiuto compiti</strong><br>
-Versione 1.18 — in vigore dal 6 ottobre 2026<br>
+Versione 1.19 — in vigore dall'8 ottobre 2026<br>
 Resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR)</p>
 
 <div class="box">
@@ -139,6 +139,11 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Nel cloud, in una raccolta separata dagli spazi degli utenti, <strong>senza nome né identificativo</strong>: una volta ricevuta, la segnalazione non è riconducibile a chi l'ha inviata. Cancellata automaticamente dopo 180 giorni (punto 9)</td>
     </tr>
     <tr>
+      <td>Impronta dell'identificativo dell'account Google del genitore che attiva il regalo della prova per un utente con meno di 14 anni</td>
+      <td>Evitare che il regalo venga riscattato un numero illimitato di volte. Il genitore usa il proprio account Google <strong>solo per questa verifica</strong>: l'account <strong>non viene collegato al profilo del figlio</strong> e non resta collegato sul dispositivo</td>
+      <td>Nel cloud: un'impronta non reversibile dell'identificativo dell'account (non l'indirizzo e-mail, non il nome) e il numero di regali attivati, al massimo tre per account. Cancellata automaticamente un anno dopo l'ultimo regalo (punto 9)</td>
+    </tr>
+    <tr>
       <td>Indirizzi dei portali dei registri elettronici salvati dall'utente</td>
       <td>Ritrovare rapidamente il portale della propria scuola</td>
       <td>Solo sul dispositivo</td>
@@ -152,7 +157,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p>Analogamente, quando Aura legge un testo ad alta voce può usare la voce del sistema operativo (che riceve il testo da pronunciare) oppure una voce "neurale" scaricata sul dispositivo, che funziona interamente offline.</p>
 
 <h3>Fotocamera, galleria e riconoscimento del testo (OCR)</h3>
-<p>La fotocamera e l'accesso alle immagini vengono usati solo quando l'utente sceglie di aggiungere la pagina di un libro. Il riconoscimento del testo dalle immagini avviene <strong>interamente sul dispositivo</strong> (libreria ML Kit di Google in modalità on-device): le immagini non vengono inviate ad alcun server per essere analizzate.</p>
+<p>La fotocamera e l'accesso alle immagini vengono usati solo quando l'utente sceglie di aggiungere la pagina di un libro. Il riconoscimento del testo dalle immagini avviene <strong>interamente sul dispositivo</strong> (libreria ML Kit di Google in modalità on-device): le immagini non vengono inviate ad alcun server per essere analizzate. La libreria ML Kit trasmette tuttavia a Google, in modo autonomo, <strong>dati tecnici d'uso e di prestazione</strong> — caratteristiche del dispositivo (produttore, modello, versione del sistema operativo), identificativo e versione dell'app, tempi di elaborazione ed eventuali codici di errore, e un identificativo dell'installazione — che Google utilizza per misurare, mantenere e migliorare il servizio e per individuarne gli abusi. <strong>Non</strong> sono trasmessi le immagini né il testo riconosciuto.</p>
 
 <h2>4. Dove viene elaborata la richiesta</h2>
 <p>Le risposte dell'assistente sono elaborate da un modello di intelligenza artificiale eseguito sui server di <strong>Mistral AI</strong>, società francese, su infrastruttura situata <strong>nell'Unione europea</strong>: la richiesta dell'utente <strong>viene quindi trasmessa fuori dal dispositivo</strong>, secondo quanto descritto in dettaglio al punto 4-bis, al quale si rinvia integralmente. L'app <strong>lo segnala in testa a ciascuna risposta</strong>.</p>
@@ -222,6 +227,11 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
       <td>Autenticazione (accesso anonimo e accesso con Google), banca dati dei progressi, configurazione remota dell'app, rapporti di errore, verifica dell'integrità dell'app</td>
       <td>Google Ireland Limited / Google LLC (Firebase Authentication, Cloud Firestore, Remote Config, Crashlytics, App Check)</td>
       <td>Responsabile del trattamento. Conserva i dati indicati al punto 3 nello spazio privato dell'utente e riceve identificativi tecnici pseudonimi</td>
+    </tr>
+    <tr>
+      <td>Riconoscimento del testo nelle fotografie, eseguito sul dispositivo</td>
+      <td>Google LLC (ML Kit)</td>
+      <td>Riceve i soli dati tecnici d'uso e di prestazione descritti al punto 3 (non le immagini né il testo), che tratta per misurare, mantenere e migliorare il servizio</td>
     </tr>
     <tr>
       <td>Distribuzione dell'applicazione, eventuali acquisti e rilascio dell'attestazione di integrità (Play Integrity)</td>
@@ -339,6 +349,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
   <li><strong>Richieste di autorizzazione inviate al genitore:</strong> cancellate automaticamente entro un giorno dalla scadenza del link (48 ore), che sia stato usato o no. La prova dell'autorizzazione concessa resta nel consenso registrato.</li>
   <li><strong>Contatori contro gli abusi</strong> (quante e-mail di autorizzazione, tentativi di codice o segnalazioni in un giorno, e quante richieste ha ricevuto uno stesso indirizzo, registrato come impronta e non in chiaro): cancellati automaticamente dopo due giorni.</li>
   <li><strong>Conteggio delle domande usate nel mese:</strong> cancellato automaticamente due mesi dopo l'ultimo utilizzo.</li>
+  <li><strong>Impronta dell'account Google del genitore che ha attivato un regalo:</strong> cancellata automaticamente un anno dopo l'ultimo regalo.</li>
   <li><strong>Collegamento con cui il genitore gestisce le proprie scelte:</strong> scade e viene cancellato dopo 90 giorni; subito, se l'autorizzazione viene ritirata.</li>
   <li><strong>Indirizzo e-mail del genitore dopo il ritiro dell'autorizzazione:</strong> viene rimosso dal consenso registrato e i collegamenti inviati smettono di funzionare. Resta soltanto, per un anno dall'ultima richiesta di autorizzazione, l'ultimo indirizzo a cui è stata chiesta, al solo fine di avvisare il genitore se qualcuno ne richiede una nuova indicando un indirizzo diverso (è la tutela contro il minore che tenta di autorizzarsi da solo). Con la cancellazione dei dati se ne va subito.</li>
   <li><strong>Conteggi giornalieri delle attestazioni di integrità</strong> (quante valide, mancanti o non valide; nessun identificativo): cancellati automaticamente dopo 30 giorni.</li>
@@ -365,7 +376,7 @@ E-mail di contatto: <strong>aura.contact.support@gmail.com</strong></p>
 <p>Questa informativa può essere aggiornata, ad esempio per nuove funzioni o per adeguamenti normativi. La versione aggiornata viene pubblicata a questo indirizzo e, quando le modifiche sono rilevanti, viene mostrata nell'app chiedendo una nuova accettazione prima di continuare a usare il servizio. In alto sono sempre indicati numero di versione e data di entrata in vigore.</p>
 
 <hr style="margin-top:2.5rem; border:none; border-top:1px solid #e5ded1">
-<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.18 del 6 ottobre 2026.<br>
+<p class="meta">Informativa sulla Privacy di "Lo spiega Aura". Versione 1.19 dell'8 ottobre 2026.<br>
 Titolare del trattamento: Simone Laudi — aura.contact.support@gmail.com.</p>
 
 </body>
